@@ -1,0 +1,7 @@
+service: hello-world
+runtime: python37
+instance_class: F1
+automatic_scaling:
+  max_instances: 5
+  target_cpu_utilization: 0.6
+  max_concurrent_requests: 60
